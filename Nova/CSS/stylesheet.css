@@ -1,0 +1,435 @@
+/*sections------------------------------------------------------------------- */
+
+body {background-image: linear-gradient(45deg, #1D4E56, #2A7784);
+    background-size: 400%;
+    background-attachment: fixed;
+    animation: bg-animation 10s infinite alternate;
+    color: lightgrey; 
+    font-family: 'Oswald';
+    font-size: 1.05em;
+    text-align: center;
+}
+
+@keyframes bg-animation{
+    0% {
+        background-position:left;
+        
+    }
+    100% {
+        background-position:right;
+        
+    }
+}
+
+#wrapper {
+    max-width: 3000px;
+}
+main  {
+    text-align: center;
+    grid-area: main;
+}
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    grid-area: feature;
+}
+
+.feature article {
+    flex-basis: 100%;
+}
+
+.feature .featured-games {
+    flex-basis: calc(50% - 10px);
+}
+
+aside {font-size: 1.25em;
+        text-align:left;
+        width: 14.5vw;
+        border-style: ridge;
+        border-radius: 12px;
+        background-image: linear-gradient(90deg, #FEFED3, #3CB3C0);
+        background-size: 200%;
+        animation: bg-animation 5s infinite alternate;
+        border-color: silver ;
+        border-width: 0.35em;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        grid-area: aside;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header {
+    margin-top: 4vh;
+    padding: 2.5vw;
+}
+
+footer {
+        grid-area: footer;
+        padding-top: 2.5vh;
+}
+
+.footerinfo {
+    background-image: linear-gradient(45deg,#2A7784,#2a6f84,#3CB3C0);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate-reverse;
+    padding:0.7vh;
+}
+
+
+.WriteBox {
+    border-style: ridge;
+    background-image: linear-gradient(90deg, #FEFED3, #3CB3C0);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+    border-width: 0.4vw;
+    border-color: silver;
+    border-radius: 2em;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.BrandName{
+    background-image: linear-gradient(90deg, #3CB3C0, #FEFED3);
+    background-size: 200%;
+    -webkit-background-clip:text;
+    color: transparent;
+    animation: bg-animation 5s infinite alternate;
+    font-size:5em;
+    margin-right: 1.5em;
+    text-align:center;
+    
+}
+
+iframe{
+width: 560px;
+height: 315px;
+}
+
+/*headings------------------------------------------------------------------- */
+h1, h2, h3, h4	{
+    color: lightgrey;
+    text-align: center;
+}
+
+figcaption {
+    font-size:inherit;
+}
+
+/*grouping------------------------------------------------------------------- */
+
+p	{margin-right:6%;
+        margin-left: 6%;
+        padding: 1%;
+        
+}
+
+center {margin-right:6%;
+        margin-left: 6%;
+        padding: 1%;
+        
+}
+
+.container {
+  position: relative;
+}
+
+.text-block {
+    opacity: 0.8;
+    position: absolute;
+    bottom: 1.25em;
+    right: 0.25em;
+    background-color: black;
+    color: lightgrey;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size:1vw;
+}
+
+/*lists---------------------------------------------------------------------- */
+
+li	{text-align:center;
+}
+
+ol	{display: table; 
+    margin: 0 auto;
+    text-align: center;
+    line-height:2.5em;
+}
+/*image----------------------------------------------------------------------- */
+
+.gameImage {
+}
+
+img {
+     border-style: ridge;
+    border-width: 0.4vw;
+    border-color: #2A7784;
+    width:50%;
+    max-width: 1000px;
+    height:100%;
+    max-height: 520px;
+}
+
+.logoImage {
+    border-width: 0vw;
+    width:25vw;
+    margin-top:0vh;
+}
+
+.lineups {
+    border-width: 0vw;
+    padding: 5px;
+    width: 23vw;
+    padding-bottom: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 1px;
+}
+
+figure	{font-size: 0.95em;
+}
+figcaption	{font-size:0.80em;
+}
+/*anchors--------------------------------------------------------------------- */
+a:link	{color: #E5AC5C ;
+        text-shadow: 0.1em 0.1em 0.1em #1F0083;
+}
+a:visited {color: #1F0083;
+           text-shadow: 0.1em 0.1em 0.1em;
+}
+a:hover {color:#EB492E;
+        text-shadow: 0.1em 0.1em 0.1em #E5AC5C;
+}
+
+
+/*Table------------------------------------------------------------------------*/
+table{
+    text-align: center;
+    margin-left: 10%;
+}
+
+th, td{
+    width:20vw;
+}
+
+/*Navigation Bar---------------------------------------------------------------*/
+
+.NavBar a {
+  float: left;
+  margin-top: 2vh;
+  margin-left: 0.5vw;
+  color:White;
+  text-align: center;
+  padding:0.7vw;
+  font-size: 1.5em;
+  text-shadow: 0px 0px 0px;
+}
+
+.NavBar a:hover {
+    color:#A8D89E;
+    text-shadow: 0.1em 0.1em 0.1em #2B83FF;
+}
+
+.NavBar .active {
+}
+
+.NavBar {background-image: linear-gradient(45deg,#2A7784,#2a6f84,#3CB3C0);
+         background-size: 400%;
+         animation: bg-animation 5s infinite alternate;
+         padding: 0.5vw;
+         grid-area: navBar;
+}
+
+.NavBar .search {
+    float: right;
+    width: 15em;
+}
+
+.Navbar .input {
+    margin-top: 1em;
+}
+/*Grid Layout And Configuration------------------------------------------------*/
+
+
+
+#wrapper {
+  display: grid;
+  grid-template-areas:
+   "navBar"
+   "TitleBox"
+   "feature"
+   "main"
+   "aside"
+   "footer";
+}
+
+@media (min-width: 50em) {
+  #wrapper {
+    display: grid;
+    grid-template-colums: 1fr 5fr;
+    grid-template-areas: 
+      "navBar  navBar"
+      "TitleBox TitleBox"
+      "feature feature"
+      "main  main"
+      "aside footer";
+  }
+}
+
+@media (min-width: 60em) {
+  #wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+        "navBar navBar navBar"
+        "aside TitleBox TitleBox"
+        "aside feature feature"
+        "aside main main"
+        "footer footer footer";
+      gap: 0px;
+      padding: 0px;
+   }
+}
+
+/* Contact Form----------------------------------------------------------------*/
+
+input[type=text], select, textarea, legend {
+    width: 100%; 
+    padding: 12px;
+    background: lightgrey;
+    border:#C0C0C0 0.5px solid;
+    border-style: outset;
+    box-sizing: border-box; 
+    border-width: 0.5em;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    color: black
+}
+
+
+input[type=submit] {
+    width: 100%;
+    text-align: center;
+    background-color: #C0C0C0;
+    color:black;
+    border-color: #C0C0C0;
+    padding: 12px 50px;
+    cursor: grab;
+    border:#C0C0C0 0.5em outset;
+
+}
+
+input[type=radio] {
+    width: 5%; 
+    padding: 12px; 
+    border:yellow 0.5px solid;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+input[type=submit]:hover {
+    background-color: #C0C0C0;
+    color:black;
+}
+
+fieldset {
+    border: #C0C0C0 0.5px solid;
+    border-radius: 4px;
+}
+
+label {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.25em;
+    color: lightgrey;}
+    
+.ContactForm {
+        border-style: ridge;
+        border-radius: 12px;
+        background-image: linear-gradient(90deg, #FEFED3, #3CB3C0);
+        background-size: 200%;
+        animation: bg-animation 5s infinite alternate;
+        border-color: silver ;
+        border-width: 0.35em;
+        margin-left: 2vw;
+        margin-right: 2vw;
+}
+
+/* rotating ----------------------------------------------------------*/
+
+.mySlides {display:none;
+            margin-left: 16vw;
+}
+
+.w3-left, .w3-right, .w3-badge {cursor:pointer;
+}
+
+.w3-badge {height:13px;width:13px;padding:0}
+
+  .container .btn-left {
+position: absolute;
+    top: 25vh;
+    left: 66vw;
+    background-color: #1b5f6b;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    border: ridge;
+    border-width: 0.4vw;
+    border-color: #2A7784 #2A7784 #2A7784 transparent;
+  }
+  .container .btn-right {
+    position: absolute;
+    top: 25vh;
+    left: 14vw;
+    background-color: #1b5f6b;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    border: ridge;
+    border-width: 0.4vw;
+    border-color: #2A7784 transparent #2A7784 #2A7784;
+  }
+  
+.btn-savegame {
+    color:White;
+    padding:0.7vw;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 0px;
+    border-radius:12px;
+    border:ridge;
+    background-image: linear-gradient(45deg,#2A7784,#2a6f84,#3CB3C0);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+  }
+
+.btn-savegame:hover{
+    border:groove;
+    color:#A8D89E;
+    text-shadow: 0.1em 0.1em 0.1em #2B83FF;
+}
+  
+/* side by side */
+
+/*-------------------------------------------------*/
